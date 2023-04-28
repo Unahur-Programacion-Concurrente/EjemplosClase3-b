@@ -1,11 +1,16 @@
 import threading
 
 contador = 0
+lock1 = threading.Lock()
 
 def funcion():
     global contador
     for i in range(1000000):
-        contador += 1
+        lock1.acquire()
+        try:
+            contador += 1
+        finally:
+            lock1.release()
 
 print("Inicio programa principal")
 print("Valor Inicial: " + str(contador))

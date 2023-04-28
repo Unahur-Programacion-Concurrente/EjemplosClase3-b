@@ -9,19 +9,11 @@ operaciones = []
 class cuentaBancaria():
     def __init__(self, saldo_inicial):
         self.saldo = saldo_inicial
-        self.lock = threading.Lock()
 
     def movimiento(self,monto):
-        self.lock.acquire()
-        try:
-            time.sleep(random.randint(1,5)/10)
-            copia_local = self.saldo
-            copia_local += monto
-            time.sleep(random.randint(1,5)/10)
-            self.saldo = copia_local
-        finally:
-            self.lock.release()
-
+        time.sleep(random.randint(1,5)/10)
+        self.saldo += monto
+    #    time.sleep(random.randint(1,5)/10)
 
 cuenta = cuentaBancaria(20000)
 
