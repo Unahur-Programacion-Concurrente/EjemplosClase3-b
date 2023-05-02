@@ -1,6 +1,6 @@
 # Condición de Carrera: Exclusión Mutua y Seccion Crítica
 
-## Codigo Fuente - Ejemplo analizado en Clase 3 (22/4/2022)
+## Codigo Fuente - Ejemplo analizado en Clase 3 (28/4/2023)
 ```
 raceConditionBank.py
 raceConditionBankLock.py
