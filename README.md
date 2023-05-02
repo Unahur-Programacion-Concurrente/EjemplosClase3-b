@@ -1,4 +1,4 @@
-# Sincronizacion: Exclusión Mutua y Seccion Crítica
+# Condición de Carrera: Exclusión Mutua y Seccion Crítica
 
 ## Codigo Fuente - Ejemplo analizado en Clase 3 (22/4/2022)
 ```
